@@ -5,18 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="50dp"
     tools:context=".MainActivity">
     <LinearLayout
+        android:visibility="gone"
         android:id="@+id/layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         />
+
     <com.example.dong.view.MyView
         android:id="@+id/myview"
+        android:visibility="visible"
+        app:radius="50px"
+        app:color="@android:color/black"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="100dp" />
 
+
+
+    <com.example.dong.view.MyImage
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/ic_launcher"/>
 
 </LinearLayout>

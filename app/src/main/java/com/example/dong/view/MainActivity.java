@@ -14,12 +14,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         layout=findViewById(R.id.layout);
         myView=findViewById(R.id.myview);
-        for (int i=0;i<10;i++){
+     /*   for (int i=0;i<10;i++){
             TextView tv=new TextView(this);
             tv.setText(i+"");
             layout.addView(tv);
-        }
+                }
         myView.invalidate();
-        myView.postInvalidate();
+        myView.postInvalidate();*/
+
     }
 }
